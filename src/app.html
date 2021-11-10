@@ -4,9 +4,11 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>html{font-size: 62.5%;}</style>
 		%svelte.head%
 	</head>
-	<body>
-		<div id="svelte">%svelte.body%</div>
+	<body class="min-h-screen w-full grid grid-cols-1 place-items-start">
+		<div id="svelte" class="w-full h-full grid
+		justify-items-center bg-gray-50 dark:bg-gray-800">%svelte.body%</div>
 	</body>
 </html>

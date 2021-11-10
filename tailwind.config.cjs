@@ -3,6 +3,7 @@ const colors = require('tailwindcss/colors')
 const config = {
 	mode: 'jit',
 	purge: ['./src/**/*.{html,js,svelte,ts}'],
+	darkMode: 'class',
 	variants: {
 		extend: {
 			scale: ['active', 'focus'],
@@ -20,7 +21,8 @@ const config = {
 				teal: colors.teal,
 				orange: colors.orange,
 				cyan: colors.cyan,
-				rose: colors.rose
+				rose: colors.rose,
+				indigo: colors.indigo
 			},
 			screens: {
 				"phone": '375px',
