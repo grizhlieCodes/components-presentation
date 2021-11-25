@@ -5,4 +5,6 @@ export const buttonsData = [
     { data: 'input', name: 'Input' },
     { data: 'sizeobserver', name: 'SizeObserver' },
     { data: 'toggle', name: 'Toggle' },
+    { data: 'materialinput', name: 'MaterialInput'},
+    { data: 'multipleinputs', name: 'MultipleInputs'}
 ];

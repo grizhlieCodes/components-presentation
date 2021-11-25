@@ -9,7 +9,7 @@
 		dispatch('toggleUpdateShowThisComponent', e);
 	};
     //Sidebar toggle
-    let sidebarToggled = false;
+    let sidebarToggled = true; //change this to false as default.
 	const toggleSidebar = (e) => {
 		if (e.target.id === 'left') sidebarToggled = !sidebarToggled;
 	};

@@ -5,7 +5,9 @@
 	import Toggle from '$lib/presented-components/Toggle.svelte';
 	import Input from '$lib/presented-components/Input.svelte';
 	import SizeObserver from '$lib/presented-components/SizeObserver.svelte';
-
+	import MaterialInput from '$lib/presented-components/MaterialInput.svelte';
+	import MultipleInputs from '$lib/presented-components/MultipleInputs.svelte';
+	
 	//Data for components
 	import { buttonsData } from '$lib/dataScripts/buttonsData.js';
 
@@ -19,10 +21,12 @@
 		fluidheader: { component: FluidNav},
 		input: { component: Input},
 		toggle: { component: Toggle},
-		sizeobserver: { component: SizeObserver}
+		sizeobserver: { component: SizeObserver},
+		materialinput: { component: MaterialInput},
+		multipleinputs: { component: MultipleInputs}
 	};
 
-	let showThisComponent = '';
+	let showThisComponent = 'materialinput'; //Change this to empty as default.
 	$: selectedComponent = showThisComponent !== '' ? components[showThisComponent].component : '';
 
 	const updateShowThisComponent = (e) => {
