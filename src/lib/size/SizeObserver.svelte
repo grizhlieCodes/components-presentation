@@ -1,5 +1,15 @@
 <script>
-	import { calcRealSize } from '$lib/scripts/helpers.js';
+	const calcRealSize = (winWidth) => {
+		let result;
+		if (winWidth >= 1110) {
+			result = 'desktop';
+		} else if (winWidth >= 768) {
+			result = 'tablet';
+		} else {
+			result = 'mobile';
+		}/*  */
+		return result;
+	};
 	import sizeStore from '$lib/size/sizeStore.js';
 	export let showDescription = false;
 	let innerWidth;
