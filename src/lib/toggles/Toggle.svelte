@@ -1,6 +1,7 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
 	const dispatch = createEventDispatcher();
+
 	export let name,
 		toggledState = false,
 		description = 'toggle for something';
@@ -20,8 +21,10 @@
 
 <button
 	class="w-[7.4rem]
-	h-[3.8rem] rounded-full cursor-pointer border-2 border-transparent inline-flex flex-shrink-0
-	transition-colors duration-200 ease-in-out {!toggledState ? 'bg-teal-400' : 'bg-teal-700'}"
+	h-[3.8rem] rounded-full cursor-pointer border-2 border-l-[4px] border-transparent flex items-center
+	transition-colors duration-200 ease-in-out {!toggledState ? 'bg-teal-400' : 'bg-teal-700'}
+	
+	"
 	role="switch"
 	tabindex="0"
 	aria-checked="{toggledState}"
@@ -30,5 +33,5 @@
 	<span
 		class="
 		w-[3.4rem]
-		h-[3.4rem] bg-white rounded-full transition inline-block duration-200 ease-in-out {!toggledState ? 'translate-x-0' : 'translate-x-[3.6rem]'}" />
+		h-[3.4rem] bg-white rounded-full transition inline-block duration-200 ease-in-out {!toggledState ? 'translate-x-0' : 'translate-x-[3.5rem]'}" />
 </button>
